@@ -8,8 +8,10 @@ sudo apt --assume-yes purge 'php*';
 sudo apt --assume-yes install php7.1 php7.1-xml php7.1-soap php7.1-curl php7.1-zip php7.1-mbstring php7.1-intl php7.1-gd  php7.1-mysql php7.1-sqlite;
 
 cd /var/www/;
-wget https://download.owncloud.org/community/owncloud-10.0.4.zip;
-unzip owncloud-10.0.4.zip;
+wget -O owncloud.zip https://download.owncloud.org/community/owncloud-10.0.7.zip;
+unzip owncloud.zip;
+
+yes | rm -f typo3.tar.gz;
 
 if [ ! -d /var/www/owncloud/data ]
 then

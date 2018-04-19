@@ -11,7 +11,7 @@ cd /var/www/;
 wget -O owncloud.zip https://download.owncloud.org/community/owncloud-10.0.7.zip;
 unzip owncloud.zip;
 
-yes | rm -f typo3.tar.gz;
+yes | rm -f owncloud.zip;
 
 if [ ! -d /var/www/owncloud/data ]
 then
